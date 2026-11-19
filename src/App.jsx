@@ -299,8 +299,8 @@ function About() {
     </article>
     <div className="metrics reveal">
       <article><Counter value={2} suffix="+" /><p>YEARS EXPERIENCE<br /><span>从业年限</span></p></article>
-      <article><Counter value={150} suffix="+" /><p>PROJECTS<br /><span>视觉设计</span></p></article>
-      <article><Counter value={110} suffix="+" /><p>BRANDS SERVED<br /><span>图片处理</span></p></article>
+      <article><Counter value={150} suffix="+" /><p>VISUAL DESIGN<br /><span>视觉设计</span></p></article>
+      <article><Counter value={110} suffix="+" /><p>IMAGE PROCESSING<br /><span>图片处理</span></p></article>
       <article><Counter value={9} /><p>CORE DIRECTIONS<br /><span>核心作品方向</span></p></article>
     </div>
   </div></section>
