@@ -1,0 +1,12 @@
+node_modules
+dist
+.vite
+*.log
+qa/chrome-profile*/
+qa/capture-profile*/
+qa/build/
+qa/*.png
+qa/*.jpg
+qa/*-output.json
+public/portfolio-source/
+public/_source_test/

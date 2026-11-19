@@ -1,0 +1,695 @@
+{
+  "categories": [
+    "C4D场景渲染",
+    "KV海报视觉",
+    "AIGC模特",
+    "跨境listing视觉",
+    "产品详情页",
+    "产品包装",
+    "产品拍摄精修",
+    "独立站设计",
+    "AI视频"
+  ],
+  "projects": [
+    {
+      "id": "category-1-project-1",
+      "title": "C4D场景渲染",
+      "en": "",
+      "group": "C4D场景渲染",
+      "scope": "C4D场景渲染",
+      "year": "2026",
+      "image": "/portfolio-site-source/1C4D%E5%9C%BA%E6%99%AF%E6%B8%B2%E6%9F%93/%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1%E4%BA%A7%E5%93%81%E6%B8%B2%E6%9F%93.png",
+      "coverType": "image",
+      "previewPosition": "center",
+      "previewViewBox": "inset(0 0 53.5% 0)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/1C4D%E5%9C%BA%E6%99%AF%E6%B8%B2%E6%9F%93/%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1%E4%BA%A7%E5%93%81%E6%B8%B2%E6%9F%93.png",
+          "title": "蓝牙音箱产品渲染"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/1C4D%E5%9C%BA%E6%99%AF%E6%B8%B2%E6%9F%93/%E5%8F%96%E6%9A%96%E5%99%A8%E4%BA%A7%E5%93%81%E6%B8%B2%E6%9F%93.png",
+          "title": "取暖器产品渲染"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/1C4D%E5%9C%BA%E6%99%AF%E6%B8%B2%E6%9F%93/%E6%95%B0%E6%8D%AE%E7%BA%BF%E4%BA%A7%E5%93%81%E6%B8%B2%E6%9F%93.png",
+          "title": "数据线产品渲染"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/1C4D%E5%9C%BA%E6%99%AF%E6%B8%B2%E6%9F%93/%E5%A9%B4%E5%84%BF%E6%8E%A8%E8%BD%A6%E4%BA%A7%E5%93%81%E6%B8%B2%E6%9F%93.png",
+          "title": "婴儿推车产品渲染"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "C4D场景渲染",
+      "count": "4 个文件",
+      "brief": "本页展示“1C4D场景渲染”文件夹中的全部作品。"
+    },
+    {
+      "id": "category-2-project-1",
+      "title": "国内KV海报",
+      "en": "",
+      "group": "KV海报视觉",
+      "scope": "KV海报视觉",
+      "year": "2026",
+      "image": "/portfolio-site-source/2KV%E6%B5%B7%E6%8A%A5%E8%A7%86%E8%A7%89/%E5%9B%BD%E5%86%85KV%E6%B5%B7%E6%8A%A5/%E8%8A%82%E5%BA%86KV%E6%B5%B7%E6%8A%A5.JPG",
+      "coverType": "image",
+      "previewPosition": "center",
+      "previewViewBox": "inset(49.5% 0 36.5% 0)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/2KV%E6%B5%B7%E6%8A%A5%E8%A7%86%E8%A7%89/%E5%9B%BD%E5%86%85KV%E6%B5%B7%E6%8A%A5/%E4%BA%A7%E5%93%81%E7%9B%B4%E9%80%9A%E8%BD%A6.JPG",
+          "title": "产品直通车"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/2KV%E6%B5%B7%E6%8A%A5%E8%A7%86%E8%A7%89/%E5%9B%BD%E5%86%85KV%E6%B5%B7%E6%8A%A5/%E5%AE%A0%E7%89%A9%E7%94%A8%E5%93%81KV%E6%B5%B7%E6%8A%A5.JPG",
+          "title": "宠物用品KV海报"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/2KV%E6%B5%B7%E6%8A%A5%E8%A7%86%E8%A7%89/%E5%9B%BD%E5%86%85KV%E6%B5%B7%E6%8A%A5/%E5%AE%B6%E5%85%B7KV%E6%B5%B7%E6%8A%A5.JPG",
+          "title": "家具KV海报"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/2KV%E6%B5%B7%E6%8A%A5%E8%A7%86%E8%A7%89/%E5%9B%BD%E5%86%85KV%E6%B5%B7%E6%8A%A5/%E8%8A%82%E5%BA%86KV%E6%B5%B7%E6%8A%A5.JPG",
+          "title": "节庆KV海报",
+          "detailViewBox": "inset(6% 0 0 0)"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/2KV%E6%B5%B7%E6%8A%A5%E8%A7%86%E8%A7%89/%E5%9B%BD%E5%86%85KV%E6%B5%B7%E6%8A%A5/%E7%9B%B4%E6%92%AD%E9%97%B4%E8%B4%B4%E7%89%87.JPG",
+          "title": "直播间贴片"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "KV海报视觉",
+      "count": "5 个文件",
+      "brief": "本页展示“国内KV海报视觉设计”文件夹中的全部作品。"
+    },
+    {
+      "id": "category-2-project-2",
+      "title": "跨境KV海报",
+      "en": "",
+      "group": "KV海报视觉",
+      "scope": "KV海报视觉",
+      "year": "2026",
+      "image": "/portfolio-site-source/2KV%E6%B5%B7%E6%8A%A5%E8%A7%86%E8%A7%89/%E8%B7%A8%E5%A2%83KV%E6%B5%B7%E6%8A%A5/%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%B4%BB%E5%8A%A8%E9%A1%B5%E9%9D%A2.JPG",
+      "coverType": "image",
+      "previewPosition": "center",
+      "previewViewBox": "inset(36.7% 0 46.5% 0)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/2KV%E6%B5%B7%E6%8A%A5%E8%A7%86%E8%A7%89/%E8%B7%A8%E5%A2%83KV%E6%B5%B7%E6%8A%A5/1%E7%8B%AC%E7%AB%8B%E7%AB%99Banner%E8%AE%BE%E8%AE%A1.JPG",
+          "title": "独立站Banner设计"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/2KV%E6%B5%B7%E6%8A%A5%E8%A7%86%E8%A7%89/%E8%B7%A8%E5%A2%83KV%E6%B5%B7%E6%8A%A5/2%E5%AE%B6%E5%85%B7KV%E6%B5%B7%E6%8A%A5.JPG",
+          "title": "家具KV海报"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/2KV%E6%B5%B7%E6%8A%A5%E8%A7%86%E8%A7%89/%E8%B7%A8%E5%A2%83KV%E6%B5%B7%E6%8A%A5/3C%E4%BA%A7%E5%93%81KV%E6%B5%B7%E6%8A%A5.JPG",
+          "title": "3C产品KV海报"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/2KV%E6%B5%B7%E6%8A%A5%E8%A7%86%E8%A7%89/%E8%B7%A8%E5%A2%83KV%E6%B5%B7%E6%8A%A5/%E5%AE%A0%E7%89%A9%E7%94%A8%E5%93%81KV%E6%B5%B7%E6%8A%A5.JPG",
+          "title": "宠物用品KV海报"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/2KV%E6%B5%B7%E6%8A%A5%E8%A7%86%E8%A7%89/%E8%B7%A8%E5%A2%83KV%E6%B5%B7%E6%8A%A5/%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%B4%BB%E5%8A%A8%E9%A1%B5%E9%9D%A2.JPG",
+          "title": "亚马逊活动页面"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "KV海报视觉",
+      "count": "5 个文件",
+      "brief": "本页展示“跨境KV海报视觉设计”文件夹中的全部作品。"
+    },
+    {
+      "id": "category-3-project-1",
+      "title": "AIGC模特",
+      "en": "",
+      "group": "AIGC模特",
+      "scope": "AIGC模特",
+      "year": "2026",
+      "image": "/portfolio-site-source/3AIGC%E6%A8%A1%E7%89%B9/5%E6%88%B7%E5%A4%96%E5%9C%BA%E6%99%AF%E5%BA%94%E7%94%A8.JPG",
+      "coverType": "image",
+      "previewPosition": "center",
+      "previewViewBox": "inset(62.8% 52.3% 0.6% 0.4%)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/3AIGC%E6%A8%A1%E7%89%B9/1%E6%A8%A1%E7%89%B9%E5%9C%BA%E6%99%AF%E5%B1%95%E7%A4%BA.JPG",
+          "title": "模特场景展示",
+          "enTitle": "MODEL SCENE STUDY"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/3AIGC%E6%A8%A1%E7%89%B9/2%E6%A8%A1%E7%89%B9%E8%BD%AC%E5%8C%96%E6%BC%94%E7%BB%8E.JPG",
+          "title": "模特转化演绎",
+          "enTitle": "MODEL TRANSFORMATION"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/3AIGC%E6%A8%A1%E7%89%B9/3%E6%A8%A1%E7%89%B9%E5%A4%9A%E8%A7%92%E5%BA%A6%E5%B1%95%E7%A4%BA.JPG",
+          "title": "模特多角度展示",
+          "enTitle": "MULTI-ANGLE STUDY"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/3AIGC%E6%A8%A1%E7%89%B9/4%E5%AE%A4%E5%86%85%E5%9C%BA%E6%99%AF%E5%BA%94%E7%94%A8.JPG",
+          "title": "室内场景应用",
+          "enTitle": "INDOOR SCENE"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/3AIGC%E6%A8%A1%E7%89%B9/5%E6%88%B7%E5%A4%96%E5%9C%BA%E6%99%AF%E5%BA%94%E7%94%A8.JPG",
+          "title": "户外场景应用",
+          "enTitle": "OUTDOOR SCENE"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "AIGC模特",
+      "count": "5 个文件",
+      "brief": "本页展示“3AIGC模特”文件夹中的全部作品。"
+    },
+    {
+      "id": "category-4-project-1",
+      "title": "睡眠机listing视觉",
+      "en": "",
+      "group": "跨境listing视觉",
+      "scope": "跨境listing视觉",
+      "year": "2026",
+      "image": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/1%E7%9D%A1%E7%9C%A0%E6%9C%BAlisting%E8%A7%86%E8%A7%89/AIGC%E5%9C%BA%E6%99%AF%E5%9B%BE%E5%BA%94%E7%94%A8.JPG",
+      "coverType": "image",
+      "previewViewBox": "inset(0 0 42% 0)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/1%E7%9D%A1%E7%9C%A0%E6%9C%BAlisting%E8%A7%86%E8%A7%89/%E7%9D%A1%E7%9C%A0%E6%9C%BA%E4%B8%BB%E5%89%AF%E5%9B%BE%E8%AE%BE%E8%AE%A1.JPG",
+          "title": "睡眠机主副图设计"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/1%E7%9D%A1%E7%9C%A0%E6%9C%BAlisting%E8%A7%86%E8%A7%89/%E7%9D%A1%E7%9C%A0%E6%9C%BAA%EF%BC%8B%E8%AE%BE%E8%AE%A1.JPG",
+          "title": "睡眠机A＋设计"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/1%E7%9D%A1%E7%9C%A0%E6%9C%BAlisting%E8%A7%86%E8%A7%89/AIGC%E5%9C%BA%E6%99%AF%E5%9B%BE%E5%BA%94%E7%94%A8.JPG",
+          "title": "AIGC场景图应用"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "跨境listing视觉",
+      "count": "3 个文件",
+      "brief": "本页展示“1睡眠机listing视觉”文件夹中的全部作品。",
+      "previewPosition": "center"
+    },
+    {
+      "id": "category-4-project-2",
+      "title": "蓝牙音箱listing视觉",
+      "en": "",
+      "group": "跨境listing视觉",
+      "scope": "跨境listing视觉",
+      "year": "2026",
+      "image": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/2%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1listing%E8%A7%86%E8%A7%89/%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1A%EF%BC%8B%E8%AE%BE%E8%AE%A1.JPG",
+      "coverType": "image",
+      "previewViewBox": "inset(0 0 76.5% 39%)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/2%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1listing%E8%A7%86%E8%A7%89/%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1%E4%B8%BB%E5%89%AF%E5%9B%BE%E8%AE%BE%E8%AE%A1.JPG",
+          "title": "蓝牙音箱主副图设计"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/2%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1listing%E8%A7%86%E8%A7%89/%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1A%EF%BC%8B%E8%AE%BE%E8%AE%A1.JPG",
+          "title": "蓝牙音箱A＋设计"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/2%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1listing%E8%A7%86%E8%A7%89/%E8%BD%AC%E6%8D%A2_05_Frame%201000011930.JPG",
+          "title": "蓝牙音箱场景应用"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "跨境listing视觉",
+      "count": "3 个文件",
+      "brief": "本页展示“2蓝牙音箱listing视觉”文件夹中的全部作品。",
+      "previewPosition": "center"
+    },
+    {
+      "id": "category-4-project-3",
+      "title": "搅拌机listing视觉",
+      "en": "",
+      "group": "跨境listing视觉",
+      "scope": "跨境listing视觉",
+      "year": "2026",
+      "image": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/3%E6%90%85%E6%8B%8C%E6%9C%BAlisting%E8%A7%86%E8%A7%89/%E8%BD%AC%E6%8D%A2_02_Frame%201000011936.JPG",
+      "coverType": "image",
+      "previewViewBox": "inset(0 30.5% 37% 0)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/3%E6%90%85%E6%8B%8C%E6%9C%BAlisting%E8%A7%86%E8%A7%89/%E6%90%85%E6%8B%8C%E6%9C%BA%E4%B8%BB%E5%89%AF%E5%9B%BE%E8%AE%BE%E8%AE%A1.JPG",
+          "title": "搅拌机主副图设计"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/3%E6%90%85%E6%8B%8C%E6%9C%BAlisting%E8%A7%86%E8%A7%89/%E6%90%85%E6%8B%8C%E6%9C%BAA%EF%BC%8B%E8%AE%BE%E8%AE%A1.JPG",
+          "title": "搅拌机A＋设计"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/3%E6%90%85%E6%8B%8C%E6%9C%BAlisting%E8%A7%86%E8%A7%89/%E8%BD%AC%E6%8D%A2_02_Frame%201000011936.JPG",
+          "title": "搅拌机场景应用"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "跨境listing视觉",
+      "count": "3 个文件",
+      "brief": "本页展示“3搅拌机listing视觉”文件夹中的全部作品。",
+      "previewPosition": "center"
+    },
+    {
+      "id": "category-4-project-4",
+      "title": "除尘器listing视觉",
+      "en": "",
+      "group": "跨境listing视觉",
+      "scope": "跨境listing视觉",
+      "year": "2026",
+      "image": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/4%E9%99%A4%E5%B0%98%E5%99%A8listing%E8%A7%86%E8%A7%89/AIGC%E5%9C%BA%E6%99%AF%E5%9B%BE%E5%BA%94%E7%94%A8.JPG",
+      "coverType": "image",
+      "previewViewBox": "inset(0 35% 32.5% 0)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/4%E9%99%A4%E5%B0%98%E5%99%A8listing%E8%A7%86%E8%A7%89/%E9%99%A4%E5%B0%98%E5%99%A8%E4%B8%BB%E5%89%AF%E5%9B%BE%E8%AE%BE%E8%AE%A1.JPG",
+          "title": "除尘器主副图设计"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/4%E9%99%A4%E5%B0%98%E5%99%A8listing%E8%A7%86%E8%A7%89/%E9%99%A4%E5%B0%98%E5%99%A8A%EF%BC%8B%E8%AE%BE%E8%AE%A1.JPG",
+          "title": "除尘器A＋设计"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/4%E8%B7%A8%E5%A2%83listing%E8%A7%86%E8%A7%89/4%E9%99%A4%E5%B0%98%E5%99%A8listing%E8%A7%86%E8%A7%89/AIGC%E5%9C%BA%E6%99%AF%E5%9B%BE%E5%BA%94%E7%94%A8.JPG",
+          "title": "AIGC场景图应用"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "跨境listing视觉",
+      "count": "3 个文件",
+      "brief": "本页展示“4除尘器listing视觉”文件夹中的全部作品。",
+      "previewPosition": "center"
+    },
+    {
+      "id": "category-5-project-1",
+      "title": "护肤品详情页",
+      "en": "",
+      "group": "产品详情页",
+      "scope": "产品详情页",
+      "year": "2026",
+      "image": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/1%E6%8A%A4%E8%82%A4%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/%E6%8A%A4%E8%82%A4%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B52.JPG",
+      "coverType": "image",
+      "previewViewBox": "inset(63.5% 0 28.5% 0)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/1%E6%8A%A4%E8%82%A4%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/%E6%8A%A4%E8%82%A4%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B51.JPG",
+          "title": "护肤品详情页1"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/1%E6%8A%A4%E8%82%A4%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/%E6%8A%A4%E8%82%A4%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B52.JPG",
+          "title": "护肤品详情页2"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "产品详情页",
+      "count": "2 个文件",
+      "brief": "本页展示“1护肤品详情页”文件夹中的全部作品。"
+    },
+    {
+      "id": "category-5-project-2",
+      "title": "花洒详情页",
+      "en": "",
+      "group": "产品详情页",
+      "scope": "产品详情页",
+      "year": "2026",
+      "image": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/2%E8%8A%B1%E6%B4%92%E8%AF%A6%E6%83%85%E9%A1%B5/%E8%8A%B1%E6%B4%92%E8%AF%A6%E6%83%85%E9%A1%B52.JPG",
+      "coverType": "image",
+      "previewViewBox": "inset(26.5% 0 68.5% 0)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/2%E8%8A%B1%E6%B4%92%E8%AF%A6%E6%83%85%E9%A1%B5/%E8%8A%B1%E6%B4%92%E8%AF%A6%E6%83%85%E9%A1%B51.JPG",
+          "title": "花洒详情页1"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/2%E8%8A%B1%E6%B4%92%E8%AF%A6%E6%83%85%E9%A1%B5/%E8%8A%B1%E6%B4%92%E8%AF%A6%E6%83%85%E9%A1%B52.JPG",
+          "title": "花洒详情页2"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "产品详情页",
+      "count": "2 个文件",
+      "brief": "本页展示“2花洒详情页”文件夹中的全部作品。"
+    },
+    {
+      "id": "category-5-project-3",
+      "title": "挂脖风扇详情页",
+      "en": "",
+      "group": "产品详情页",
+      "scope": "产品详情页",
+      "year": "2026",
+      "image": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/3%E6%8C%82%E8%84%96%E9%A3%8E%E6%89%87%E8%AF%A6%E6%83%85%E9%A1%B5/%E6%8C%82%E8%84%96%E9%A3%8E%E6%89%87%E8%AF%A6%E6%83%85%E9%A1%B51.JPG",
+      "coverType": "image",
+      "previewViewBox": "inset(85% 0 7% 0)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/3%E6%8C%82%E8%84%96%E9%A3%8E%E6%89%87%E8%AF%A6%E6%83%85%E9%A1%B5/%E6%8C%82%E8%84%96%E9%A3%8E%E6%89%87%E8%AF%A6%E6%83%85%E9%A1%B51.JPG",
+          "title": "挂脖风扇详情页1"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/3%E6%8C%82%E8%84%96%E9%A3%8E%E6%89%87%E8%AF%A6%E6%83%85%E9%A1%B5/%E6%8C%82%E8%84%96%E9%A3%8E%E6%89%87%E8%AF%A6%E6%83%85%E9%A1%B52.JPG",
+          "title": "挂脖风扇详情页2"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "产品详情页",
+      "count": "2 个文件",
+      "brief": "本页展示“3挂脖风扇详情页”文件夹中的全部作品。"
+    },
+    {
+      "id": "category-5-project-4",
+      "title": "洗地机详情页",
+      "en": "",
+      "group": "产品详情页",
+      "scope": "产品详情页",
+      "year": "2026",
+      "image": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/4%E6%B4%97%E5%9C%B0%E6%9C%BA%E8%AF%A6%E6%83%85%E9%A1%B5/%E6%B4%97%E5%9C%B0%E6%9C%BA%E8%AF%A6%E6%83%85%E9%A1%B51.JPG",
+      "coverType": "image",
+      "previewViewBox": "inset(64.5% 0 29.5% 0)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/4%E6%B4%97%E5%9C%B0%E6%9C%BA%E8%AF%A6%E6%83%85%E9%A1%B5/%E6%B4%97%E5%9C%B0%E6%9C%BA%E8%AF%A6%E6%83%85%E9%A1%B51.JPG",
+          "title": "洗地机详情页1"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/4%E6%B4%97%E5%9C%B0%E6%9C%BA%E8%AF%A6%E6%83%85%E9%A1%B5/%E6%B4%97%E5%9C%B0%E6%9C%BA%E8%AF%A6%E6%83%85%E9%A1%B52.JPG",
+          "title": "洗地机详情页2"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "产品详情页",
+      "count": "2 个文件",
+      "brief": "本页展示“4洗地机详情页”文件夹中的全部作品。"
+    },
+    {
+      "id": "category-5-project-5",
+      "title": "电焊钳详情页",
+      "en": "",
+      "group": "产品详情页",
+      "scope": "产品详情页",
+      "year": "2026",
+      "image": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/5%E7%94%B5%E7%84%8A%E9%92%B3%E8%AF%A6%E6%83%85%E9%A1%B5/%E7%94%B5%E7%84%8A%E9%92%B3%E8%AF%A6%E6%83%85%E9%A1%B52.JPG",
+      "coverType": "image",
+      "previewViewBox": "inset(6% 0 86% 0)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/5%E7%94%B5%E7%84%8A%E9%92%B3%E8%AF%A6%E6%83%85%E9%A1%B5/%E7%94%B5%E7%84%8A%E9%92%B3%E8%AF%A6%E6%83%85%E9%A1%B51.JPG",
+          "title": "电焊钳详情页1"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/5%E4%BA%A7%E5%93%81%E8%AF%A6%E6%83%85%E9%A1%B5/5%E7%94%B5%E7%84%8A%E9%92%B3%E8%AF%A6%E6%83%85%E9%A1%B5/%E7%94%B5%E7%84%8A%E9%92%B3%E8%AF%A6%E6%83%85%E9%A1%B52.JPG",
+          "title": "电焊钳详情页2"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "产品详情页",
+      "count": "2 个文件",
+      "brief": "本页展示“5电焊钳详情页”文件夹中的全部作品。"
+    },
+    {
+      "id": "category-6-project-1",
+      "title": "产品包装",
+      "en": "",
+      "group": "产品包装",
+      "scope": "产品包装",
+      "year": "2026",
+      "image": "/portfolio-site-source/6%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85/%E8%98%91%E8%8F%87%E5%8F%AF%E5%8F%AF%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85.JPG",
+      "coverType": "image",
+      "previewPosition": "center",
+      "previewViewBox": "inset(0 0 35% 0)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/6%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85/%E5%86%BB%E5%B9%B2%E8%8D%89%E8%8E%93%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85.JPG",
+          "title": "冻干草莓产品包装"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/6%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85/%E6%B5%B7%E7%9B%90%E7%89%87%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85.JPG",
+          "title": "海盐片产品包装"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/6%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85/%E6%8A%A4%E8%82%A4%E7%B2%BE%E5%8D%8E%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85.JPG",
+          "title": "护肤精华产品包装"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/6%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85/%E7%BE%8E%E7%94%B2%E6%8A%A4%E7%90%86%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85.JPG",
+          "title": "美甲护理产品包装"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/6%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85/%E8%98%91%E8%8F%87%E5%8F%AF%E5%8F%AF%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85.JPG",
+          "title": "蘑菇可可产品包装"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/6%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85/%E5%A5%B6%E6%B3%A1%E6%9C%BA%E4%BA%A7%E5%93%81%E5%8C%85%E8%A3%85.JPG",
+          "title": "奶泡机产品包装"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "产品包装",
+      "count": "6 个文件",
+      "brief": "本页展示“6产品包装”文件夹中的全部作品。"
+    },
+    {
+      "id": "category-7-project-1",
+      "title": "产品拍摄精修",
+      "en": "",
+      "group": "产品拍摄精修",
+      "scope": "产品拍摄精修",
+      "year": "2026",
+      "image": "/portfolio-site-source/7%E4%BA%A7%E5%93%81%E6%8B%8D%E6%91%84%E7%B2%BE%E4%BF%AE/%E7%94%B5%E5%8A%A8%E7%89%99%E5%88%B7%E6%8B%8D%E6%91%84%E7%B2%BE%E4%BF%AE.JPG",
+      "coverType": "image",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/7%E4%BA%A7%E5%93%81%E6%8B%8D%E6%91%84%E7%B2%BE%E4%BF%AE/%E7%94%B5%E5%8A%A8%E7%89%99%E5%88%B7%E6%8B%8D%E6%91%84%E7%B2%BE%E4%BF%AE.JPG",
+          "title": "电动牙刷拍摄精修"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/7%E4%BA%A7%E5%93%81%E6%8B%8D%E6%91%84%E7%B2%BE%E4%BF%AE/%E5%92%96%E5%95%A1%E6%9C%BA%E6%8B%8D%E6%91%84%E7%B2%BE%E4%BF%AE.JPG",
+          "title": "咖啡机拍摄精修"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/7%E4%BA%A7%E5%93%81%E6%8B%8D%E6%91%84%E7%B2%BE%E4%BF%AE/%E6%B4%97%E9%9D%A2%E5%A5%B6%E6%8B%8D%E6%91%84%E7%B2%BE%E4%BF%AE.JPG",
+          "title": "洗面奶拍摄精修"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/7%E4%BA%A7%E5%93%81%E6%8B%8D%E6%91%84%E7%B2%BE%E4%BF%AE/%E5%8D%B8%E5%A6%86%E6%B2%B9%E6%8B%8D%E6%91%84%E7%B2%BE%E4%BF%AE.JPG",
+          "title": "卸妆油拍摄精修"
+        },
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/7%E4%BA%A7%E5%93%81%E6%8B%8D%E6%91%84%E7%B2%BE%E4%BF%AE/%E6%B8%B8%E6%88%8F%E6%89%8B%E6%9F%84%E6%8B%8D%E6%91%84%E7%B2%BE%E4%BF%AE.JPG",
+          "title": "游戏手柄拍摄精修"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "产品拍摄精修",
+      "count": "5 个文件",
+      "brief": "本页展示“7产品拍摄精修”文件夹中的全部作品。"
+    },
+    {
+      "id": "category-8-project-1",
+      "title": "树帐独立站",
+      "en": "",
+      "group": "独立站设计",
+      "scope": "独立站设计",
+      "year": "2026",
+      "image": "/portfolio-site-source/8%E7%8B%AC%E7%AB%8B%E7%AB%99%E8%AE%BE%E8%AE%A1/%E6%A0%91%E5%B8%90%E7%8B%AC%E7%AB%8B%E7%AB%99.png",
+      "coverType": "image",
+      "previewPosition": "center top",
+      "previewViewBox": "inset(0 0 84.5% 35%)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/8%E7%8B%AC%E7%AB%8B%E7%AB%99%E8%AE%BE%E8%AE%A1/%E6%A0%91%E5%B8%90%E7%8B%AC%E7%AB%8B%E7%AB%99.png",
+          "title": "树帐独立站"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "独立站设计",
+      "count": "1 个文件",
+      "brief": "本页展示“树帐独立站”作品。"
+    },
+    {
+      "id": "category-8-project-2",
+      "title": "珠宝独立站",
+      "en": "",
+      "group": "独立站设计",
+      "scope": "独立站设计",
+      "year": "2026",
+      "image": "/portfolio-site-source/8%E7%8B%AC%E7%AB%8B%E7%AB%99%E8%AE%BE%E8%AE%A1/%E7%8F%A0%E5%AE%9D%E7%8B%AC%E7%AB%8B%E7%AB%99.png",
+      "coverType": "image",
+      "previewPosition": "68% center",
+      "previewViewBox": "inset(66.5% 0 18.8% 35%)",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/portfolio-site-source/8%E7%8B%AC%E7%AB%8B%E7%AB%99%E8%AE%BE%E8%AE%A1/%E7%8F%A0%E5%AE%9D%E7%8B%AC%E7%AB%8B%E7%AB%99.png",
+          "title": "珠宝独立站"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "独立站设计",
+      "count": "1 个文件",
+      "brief": "本页展示“珠宝独立站”作品。"
+    },
+    {
+      "id": "category-9-project-1",
+      "title": "保温水瓶",
+      "en": "",
+      "group": "AI视频",
+      "scope": "AI视频",
+      "year": "2026",
+      "image": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E4%BF%9D%E6%B8%A9%E6%B0%B4%E7%93%B6.mp4",
+      "coverType": "video",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E4%BF%9D%E6%B8%A9%E6%B0%B4%E7%93%B6.mp4",
+          "title": "保温水瓶"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "AI视频",
+      "count": "1 个文件",
+      "brief": "本页展示“保温水瓶”作品。"
+    },
+    {
+      "id": "category-9-project-2",
+      "title": "宠物冰垫",
+      "en": "",
+      "group": "AI视频",
+      "scope": "AI视频",
+      "year": "2026",
+      "image": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%AE%A0%E7%89%A9%E5%86%B0%E5%9E%AB.mp4",
+      "coverType": "video",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%AE%A0%E7%89%A9%E5%86%B0%E5%9E%AB.mp4",
+          "title": "宠物冰垫"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "AI视频",
+      "count": "1 个文件",
+      "brief": "本页展示“宠物冰垫”作品。"
+    },
+    {
+      "id": "category-9-project-3",
+      "title": "宠物喂食器",
+      "en": "",
+      "group": "AI视频",
+      "scope": "AI视频",
+      "year": "2026",
+      "image": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%AE%A0%E7%89%A9%E5%96%82%E9%A3%9F%E5%99%A8.mp4",
+      "coverType": "video",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%AE%A0%E7%89%A9%E5%96%82%E9%A3%9F%E5%99%A8.mp4",
+          "title": "宠物喂食器"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "AI视频",
+      "count": "1 个文件",
+      "brief": "本页展示“宠物喂食器”作品。"
+    },
+    {
+      "id": "category-9-project-4",
+      "title": "儿童泳镜",
+      "en": "",
+      "group": "AI视频",
+      "scope": "AI视频",
+      "year": "2026",
+      "image": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%84%BF%E7%AB%A5%E6%B3%B3%E9%95%9C.mp4",
+      "coverType": "video",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%84%BF%E7%AB%A5%E6%B3%B3%E9%95%9C.mp4",
+          "title": "儿童泳镜"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "AI视频",
+      "count": "1 个文件",
+      "brief": "本页展示“儿童泳镜”作品。"
+    },
+    {
+      "id": "category-9-project-5",
+      "title": "蓝牙耳机",
+      "en": "",
+      "group": "AI视频",
+      "scope": "AI视频",
+      "year": "2026",
+      "image": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA.mp4",
+      "coverType": "video",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA.mp4",
+          "title": "蓝牙耳机"
+        }
+      ],
+      "tone": "tone-base",
+      "services": "AI视频",
+      "count": "1 个文件",
+      "brief": "本页展示“蓝牙耳机”作品。"
+    }
+  ]
+}
