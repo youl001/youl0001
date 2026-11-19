@@ -103,11 +103,11 @@ function IntroExperience() {
   useEffect(() => {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     document.body.classList.add('is-locked')
-    const leaveTimer = window.setTimeout(() => setLeaving(true), reduced ? 80 : 4200)
+    const leaveTimer = window.setTimeout(() => setLeaving(true), reduced ? 80 : 3800)
     const hideTimer = window.setTimeout(() => {
       setHidden(true)
       document.body.classList.remove('is-locked')
-    }, reduced ? 180 : 5280)
+    }, reduced ? 180 : 4880)
     return () => {
       clearTimeout(leaveTimer)
       clearTimeout(hideTimer)
@@ -115,10 +115,16 @@ function IntroExperience() {
     }
   }, [])
   if (hidden) return null
-  const words = ['Hello,', 'this', 'is', 'Youl']
+  const words = [
+    { text: 'Hello！', className: 'is-hello' },
+    { text: 'I am', className: 'is-intro' },
+    { text: 'Youl', className: 'is-name' },
+  ]
   return <div className={`intro-screen ${leaving ? 'is-leaving' : ''}`} aria-label="欢迎来到 Youl 的作品集">
     <img className="intro-animals" src={assetUrl('/assets/youl-intro-animals.png')} alt="" />
-    <h1 className="intro-copy">{words.map((word, index) => <span style={{ '--word-index': index }} key={word}>{word}</span>)}</h1>
+    <h1 className="intro-copy" aria-label="Hello！I am Youl">
+      {words.map((word, index) => <span className={word.className} style={{ '--word-index': index }} key={word.text}>{word.text}</span>)}
+    </h1>
     <div className="intro-curtain" aria-hidden="true" />
   </div>
 }

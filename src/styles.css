@@ -1,4 +1,6 @@
-@font-face { font-family: 'Source Han Sans SC'; src: url('/fonts/SourceHanSansSC-VF.ttf') format('truetype'); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Source Han Sans SC'; src: url('../fonts/SourceHanSansSC-VF.ttf') format('truetype'); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'FK Grotesk Neue'; src: url('../fonts/FKGroteskNeue-Medium.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'FKT Echo'; src: url('../fonts/FKTEcho-ExtraCondensed.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
 
 :root {
   font-family: 'Source Han Sans SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
@@ -23,9 +25,11 @@ img, video { display: block; width: 100%; }
 
 .intro-screen { position: fixed; z-index: 1000; inset: 0; color: var(--ink); background: var(--accent); overflow: hidden; }
 .intro-animals { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.12); animation: intro-animals-in 1.55s cubic-bezier(.22,1,.36,1) .35s forwards; }
-.intro-copy { position: absolute; z-index: 2; top: 50%; left: 50%; display: grid; margin: 0; place-items: center; color: var(--white); font-size: clamp(28px, 3.1vw, 54px); font-weight: 600; line-height: 1; letter-spacing: -.04em; text-shadow: 0 3px 18px rgba(16,23,27,.18); white-space: nowrap; transform: translate(-50%, -50%); }
-.intro-copy span { grid-area: 1 / 1; display: inline-block; opacity: 0; filter: blur(7px); transform: translateY(22px) scale(.98); animation: intro-word-step .82s cubic-bezier(.22,1,.36,1) calc(.3s + var(--word-index) * .72s) both; }
-.intro-copy span:last-child { animation-name: intro-word-final; animation-duration: 1s; animation-fill-mode: forwards; }
+.intro-copy { position: absolute; z-index: 2; top: 50%; left: 50%; display: flex; margin: 0; align-items: baseline; gap: clamp(10px, 1.15vw, 22px); color: var(--white); font-family: 'FK Grotesk Neue', sans-serif; font-size: clamp(24px, 2.4vw, 42px); font-weight: 500; line-height: .84; letter-spacing: -.055em; text-shadow: 0 3px 18px rgba(16,23,27,.18); white-space: nowrap; transform: translate(-50%, -50%); }
+.intro-copy span { display: inline-block; opacity: 0; clip-path: inset(0 100% 0 0); filter: blur(5px); transform: translateY(34px); animation: intro-word-reveal .9s cubic-bezier(.22,1,.36,1) calc(.28s + var(--word-index) * .42s) forwards; }
+.intro-copy .is-hello { letter-spacing: -.065em; }
+.intro-copy .is-intro { font-size: .62em; letter-spacing: -.035em; }
+.intro-copy .is-name { font-family: 'FKT Echo', 'Arial Narrow', sans-serif; font-size: clamp(84px, 10.5vw, 190px); font-weight: 400; letter-spacing: -.025em; text-transform: uppercase; transform: translateY(40px) scaleX(.84); transform-origin: left bottom; animation-name: intro-name-reveal; animation-duration: 1.15s; }
 .intro-curtain { position: absolute; z-index: 4; top: 50%; left: 50%; width: 30vmax; height: 11vmax; border-radius: 50%; background: var(--white); transform: translate(-50%, -50%) rotate(-18deg) scale(0); will-change: transform; }
 .intro-screen.is-leaving .intro-curtain { animation: oval-cover 1.05s cubic-bezier(.76,0,.24,1) forwards; }
 .intro-screen.is-leaving .intro-animals { opacity: 1; animation: intro-scene-out .25s ease .78s forwards; }
@@ -36,8 +40,8 @@ img, video { display: block; width: 100%; }
 .page-transition.is-covered { background: var(--white); animation: transition-fade .48s cubic-bezier(.22,1,.36,1) forwards; }
 .page-transition.is-covered .page-transition-oval { transform: translate(-50%, -50%) rotate(-18deg) scale(14); }
 @keyframes intro-animals-in { to { opacity: 1; transform: scale(1); } }
-@keyframes intro-word-step { 0% { opacity: 0; filter: blur(7px); transform: translateY(22px) scale(.98); } 28%, 68% { opacity: 1; filter: blur(0); transform: translateY(0) scale(1); } 100% { opacity: 0; filter: blur(7px); transform: translateY(-20px) scale(.98); } }
-@keyframes intro-word-final { 0% { opacity: 0; filter: blur(7px); transform: translateY(22px) scale(.98); } 45%, 100% { opacity: 1; filter: blur(0); transform: translateY(0) scale(1); } }
+@keyframes intro-word-reveal { 0% { opacity: 0; clip-path: inset(0 100% 0 0); filter: blur(5px); transform: translateY(34px); } 58% { opacity: 1; filter: blur(0); } 100% { opacity: 1; clip-path: inset(0); filter: blur(0); transform: translateY(0); } }
+@keyframes intro-name-reveal { 0% { opacity: 0; clip-path: inset(0 100% 0 0); filter: blur(5px); transform: translateY(40px) scaleX(.84); } 62% { opacity: 1; filter: blur(0); } 100% { opacity: 1; clip-path: inset(0); filter: blur(0); transform: translateY(0) scaleX(1); } }
 @keyframes oval-cover { to { transform: translate(-50%, -50%) rotate(-18deg) scale(14); } }
 @keyframes intro-scene-out { from { opacity: 1; } to { opacity: 0; } }
 @keyframes transition-fade { to { opacity: 0; } }
