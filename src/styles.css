@@ -108,7 +108,6 @@ img, video { display: block; width: 100%; }
 .deck-5 { --i: 4; }.deck-6 { --i: 5; }.deck-7 { --i: 6; }.deck-8 { --i: 7; }
 .deck-9 { --i: 8; }.deck-10 { --i: 9; }.deck-11 { --i: 10; }.deck-12 { --i: 11; }
 .deck-13 { --i: 12; }.deck-14 { --i: 13; }.deck-15 { --i: 14; }.deck-16 { --i: 15; }
-.scroll-note { position: absolute; z-index: 4; right: 20px; bottom: 24px; font-size: 9px; letter-spacing: .12em; writing-mode: vertical-rl; }
 
 .section-tag { display: block; padding-top: 14px; border-top: 1px solid rgba(16,23,27,.25); font-size: 10px; letter-spacing: .13em; }
 .section-tag p { margin: 0; }
@@ -336,7 +335,6 @@ img, video { display: block; width: 100%; }
   .deck-card img, .deck-card video, .deck-card::after { border-radius: 20px; }
   .deck-card span { bottom: 12px; font-size: 8px; }
   .deck-card span { left: 13px; }
-  .scroll-note { display: none; }
   .section-tag { grid-template-columns: 40px 1fr; }
   .about-heading, .work-heading, .strength-heading { margin-top: 58px; }
   .about-heading h2, .work-heading h2, .strength-heading h2 { font-size: 16.5vw; line-height: .9; }

@@ -267,7 +267,6 @@ function Hero() {
         </a>)}
       </div>
     </div>
-    <div className="scroll-note">SCROLL TO EXPLORE</div>
   </section>
 }
 
