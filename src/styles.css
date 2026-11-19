@@ -270,10 +270,15 @@ img, video { display: block; width: 100%; }
 .case-categories small { width: 100%; margin-bottom: 4px; }
 .case-categories b { padding: 8px 11px; border: 1px solid rgba(16,23,27,.25); border-radius: 999px; font-size: 10px; font-weight: 400; }
 .case-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: auto; padding-top: 20px; border-top: 1px solid rgba(16,23,27,.25); }
-.case-navigation button { display: flex; padding: 0; flex-direction: column; gap: 6px; border: 0; background: transparent; text-align: left; }
+.case-navigation button { display: flex; min-height: 72px; padding: 12px 14px; flex-direction: column; justify-content: center; gap: 6px; border: 1px solid transparent; border-radius: 16px; background: transparent; text-align: left; transition: color .28s ease, background .28s ease, border-color .28s ease, box-shadow .28s ease, transform .16s ease; }
 .case-navigation button:last-child { align-items: flex-end; text-align: right; }
 .case-navigation span { font-size: 8px; letter-spacing: .1em; opacity: .55; }
-.case-navigation b { font-size: 17px; font-weight: 500; }
+.case-navigation b { font-size: 17px; font-weight: 500; transition: transform .28s var(--ease); }
+.case-navigation button:hover { color: var(--deep-purple); border-color: rgba(53,21,147,.12); background: var(--accent-soft); box-shadow: 0 8px 20px rgba(16,23,27,.06); transform: translateY(-2px); }
+.case-navigation button:first-child:hover b { transform: translateX(-4px); }
+.case-navigation button:last-child:hover b { transform: translateX(4px); }
+.case-navigation button:active { box-shadow: 0 2px 8px rgba(16,23,27,.08); transform: translateY(1px) scale(.98); }
+.case-navigation button:focus-visible { outline: 2px solid var(--deep-purple); outline-offset: 2px; background: var(--accent-soft); }
 
 @media (max-width: 1100px) {
   :root { --shell: calc(100vw - 36px); }
