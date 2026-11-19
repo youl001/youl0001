@@ -27,6 +27,11 @@ const legacyProjects = [
 
 const { categories: projectCategories, projects } = portfolioData
 
+const assetUrl = (path) => {
+  if (!path || /^(?:https?:|data:|blob:)/.test(path)) return path
+  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
+}
+
 const galleryEnglishLabelByGroup = {
   'C4D场景渲染': 'C4D RENDERING',
   'KV海报视觉': 'KEY VISUAL DESIGN',
@@ -112,7 +117,7 @@ function IntroExperience() {
   if (hidden) return null
   const words = ['Hello,', 'this', 'is', 'Youl']
   return <div className={`intro-screen ${leaving ? 'is-leaving' : ''}`} aria-label="欢迎来到 Youl 的作品集">
-    <img className="intro-animals" src="/assets/youl-intro-animals.png" alt="" />
+    <img className="intro-animals" src={assetUrl('/assets/youl-intro-animals.png')} alt="" />
     <h1 className="intro-copy">{words.map((word, index) => <span style={{ '--word-index': index }} key={word}>{word}</span>)}</h1>
     <div className="intro-curtain" aria-hidden="true" />
   </div>
@@ -239,7 +244,7 @@ function Hero() {
   }
   const featured = homeProjects
   return <section className="hero" id="top" ref={heroRef} onPointerMove={onMove}>
-    <video className="hero-video" autoPlay muted loop playsInline poster="/assets/hero-product.png"><source src="/assets/hero-bg.mp4" type="video/mp4" /></video>
+    <video className="hero-video" autoPlay muted loop playsInline poster={assetUrl('/assets/hero-product.png')}><source src={assetUrl('/assets/hero-bg.mp4')} type="video/mp4" /></video>
     <div className="hero-copy shell reveal">
       <p>ECOMMERCE VISUAL DESIGNER</p>
       <h1><span>VISUALS THAT CONNECT.</span>{' '}<em>STORIES THAT STAY.</em></h1>
@@ -250,8 +255,8 @@ function Hero() {
       <div className="hero-wheel">
         {featured.map((project, index) => <a className="deck-card" style={{ '--angle': `${index * (360 / featured.length)}deg` }} href={`#/projects/${project.id}`} key={project.id}>
           {project.coverType === 'video'
-            ? <video src={project.image} muted loop autoPlay playsInline preload="metadata" aria-hidden="true" style={{ objectViewBox: project.previewViewBox || 'none', objectPosition: project.previewPosition || 'center' }} />
-            : <img src={project.image} alt="" loading={index < 3 ? 'eager' : 'lazy'} style={{ objectViewBox: project.previewViewBox || 'none', objectPosition: project.previewPosition || 'center' }} />}
+            ? <video src={assetUrl(project.image)} muted loop autoPlay playsInline preload="metadata" aria-hidden="true" style={{ objectViewBox: project.previewViewBox || 'none', objectPosition: project.previewPosition || 'center' }} />
+            : <img src={assetUrl(project.image)} alt="" loading={index < 3 ? 'eager' : 'lazy'} style={{ objectViewBox: project.previewViewBox || 'none', objectPosition: project.previewPosition || 'center' }} />}
           <span>{project.title}</span>
         </a>)}
       </div>
@@ -264,7 +269,7 @@ function About() {
   return <section className="about section" id="about"><div className="shell">
     <article className="about-profile-card reveal">
       <div className="about-profile-side">
-        <div className="about-profile-photo"><img src="/assets/youl-profile.jpg" alt="YOUL 个人照片" /></div>
+        <div className="about-profile-photo"><img src={assetUrl('/assets/youl-profile.jpg')} alt="YOUL 个人照片" /></div>
         <div className="about-profile-contact">
           <a href="tel:17807811576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.8 9.7 8 7.9 9.7c1.1 2.5 3 4.4 5.5 5.5l1.8-1.8 4.1 2.5c.5.3.8.9.6 1.5l-.5 2.1c-.2.8-.9 1.3-1.7 1.3C9.6 20.4 3.6 14.4 3.2 6.3c0-.8.5-1.5 1.3-1.7l2.1-.5c.2-.1.4-.1.6-.3Z" /></svg><span>17807811576</span></a>
           <a href="mailto:youl0001@163.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 7 8 6 8-6" /></svg><span>youl0001@163.com</span></a>
@@ -301,9 +306,9 @@ function ProjectCard({ project, onOpen, shape = 'landscape' }) {
   return <article className={`project-card reveal is-${shape}`} id={`project-${project.id}`}>
     <button type="button" className={`project-image ${project.tone}`} onClick={() => onOpen(project)} aria-label={`查看${project.title}案例详情`}>
       {project.coverType === 'video'
-        ? <video src={project.image} muted loop autoPlay playsInline preload="metadata" aria-label={`${project.title}视频预览`} />
+        ? <video src={assetUrl(project.image)} muted loop autoPlay playsInline preload="metadata" aria-label={`${project.title}视频预览`} />
         : <img
-            src={project.image}
+            src={assetUrl(project.image)}
             alt={`${project.title}示意视觉`}
             loading="lazy"
             data-parallax=".045"
@@ -443,8 +448,8 @@ function OrbitServices() {
         </div>
         {homeProjects.map((item) => <article className={`orbit-card ${item.tone}`} key={item.id}>
           {item.coverType === 'video'
-            ? <video src={item.image} muted loop autoPlay playsInline preload="metadata" aria-hidden="true" style={{ objectViewBox: item.previewViewBox || 'none', objectPosition: item.previewPosition || 'center' }} />
-            : <img src={item.image} alt="" loading="lazy" style={{ objectViewBox: item.previewViewBox || 'none', objectPosition: item.previewPosition || 'center' }} />}
+            ? <video src={assetUrl(item.image)} muted loop autoPlay playsInline preload="metadata" aria-hidden="true" style={{ objectViewBox: item.previewViewBox || 'none', objectPosition: item.previewPosition || 'center' }} />
+            : <img src={assetUrl(item.image)} alt="" loading="lazy" style={{ objectViewBox: item.previewViewBox || 'none', objectPosition: item.previewPosition || 'center' }} />}
           <span>{item.title}</span>
         </article>)}
     </div>
@@ -469,9 +474,9 @@ function ProjectDetail({ project, onClose, onNext, onPrevious }) {
             {(project.gallery?.length ? project.gallery : [{ type: 'image', src: project.detailImage || project.image }]).map((media, index) => <figure className="case-media" key={`${media.src}-${index}`}>
               {media.title && <figcaption className="is-bilingual"><span>{media.title}</span><small>{media.enTitle || galleryEnglishLabelByGroup[project.group] || 'SELECTED WORK'}</small></figcaption>}
               {media.type === 'video'
-                ? <video src={media.src} poster={media.poster} controls playsInline preload="metadata" aria-label={`${project.title}视频 ${index + 1}`} />
+                ? <video src={assetUrl(media.src)} poster={assetUrl(media.poster)} controls playsInline preload="metadata" aria-label={`${project.title}视频 ${index + 1}`} />
                 : <img
-                    src={media.src}
+                    src={assetUrl(media.src)}
                     alt={`${project.title}作品 ${index + 1}`}
                     loading={index === 0 ? 'eager' : 'lazy'}
                     style={{ objectViewBox: media.detailViewBox || 'none' }}
