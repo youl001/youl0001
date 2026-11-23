@@ -102,16 +102,26 @@ function IntroExperience() {
   const [leaving, setLeaving] = useState(false)
   useEffect(() => {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    let readyTimer
     document.body.classList.add('is-locked')
+    document.body.classList.add('is-intro-active')
+    document.body.classList.remove('is-intro-ready')
     const leaveTimer = window.setTimeout(() => setLeaving(true), reduced ? 80 : 2200)
     const hideTimer = window.setTimeout(() => {
       setHidden(true)
       document.body.classList.remove('is-locked')
+      document.body.classList.remove('is-intro-active')
+      if (!reduced) {
+        document.body.classList.add('is-intro-ready')
+        readyTimer = window.setTimeout(() => document.body.classList.remove('is-intro-ready'), 1600)
+      }
     }, reduced ? 180 : 3280)
     return () => {
       clearTimeout(leaveTimer)
       clearTimeout(hideTimer)
+      clearTimeout(readyTimer)
       document.body.classList.remove('is-locked')
+      document.body.classList.remove('is-intro-active', 'is-intro-ready')
     }
   }, [])
   if (hidden) return null
