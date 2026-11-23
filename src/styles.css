@@ -329,17 +329,17 @@ body.is-intro-ready .hero-wheel { rotate: 0deg; transition: rotate 1.65s cubic-b
   .brand > span { font-size: 24px; }
   .brand small, .site-header nav, .contact-button { display: none; }
   .menu-button { display: block; width: 44px; height: 44px; justify-self: end; }
-  .mobile-menu { padding: max(108px, calc(88px + env(safe-area-inset-top))) 20px max(30px, env(safe-area-inset-bottom)); }
-  .mobile-menu a { min-height: 56px; font-size: clamp(52px, 16vw, 70px); }
-  .hero { min-height: max(780px, 100svh); padding-top: 86px; }
+  .mobile-menu { padding: max(108px, calc(88px + env(safe-area-inset-top))) 24px max(30px, env(safe-area-inset-bottom)); }
+  .mobile-menu a { display: flex; min-height: 72px; align-items: center; padding: 18px 4px; font-size: clamp(30px, 9vw, 38px); line-height: 1; letter-spacing: -.03em; }
+  .hero { min-height: max(720px, 100svh); padding-top: 86px; }
   .announcement { top: 76px; width: calc(100vw - 28px); }
-  .hero-copy { width: 100%; padding: 78px 14px 0; }
-  .hero-copy > p { margin-bottom: 18px; font-size: 9px; }
-  .hero h1 { max-width: 360px; font-size: clamp(40px, 12.5vw, 52px); line-height: .92; white-space: normal; }
-  .hero h1 span, .hero h1 em { display: block; }
-  .hero-intro { width: min(330px, 92vw); max-width: 330px; margin-top: 20px; font-size: 14px; }
-  .primary-button { min-width: min(230px, 76vw); min-height: 58px; margin-top: 24px; padding: 16px 22px; font-size: 15px; }
-  .hero-deck { --ring-radius: 118vw; top: min(70svh, 600px); width: min(72vw, 300px); }
+  .hero-copy { width: 100%; padding: 56px 14px 0; }
+  .hero-copy > p { margin-bottom: 13px; font-size: 9px; }
+  .hero h1 { max-width: 360px; font-size: clamp(28px, 8.7vw, 34px); line-height: 1.02; white-space: normal; }
+  .hero h1 span, .hero h1 em { display: inline; }
+  .hero-intro { width: min(330px, 92vw); max-width: 330px; margin-top: 16px; font-size: 13px; line-height: 1.45; }
+  .primary-button { min-width: min(210px, 70vw); min-height: 54px; margin-top: 22px; padding: 15px 20px; font-size: 14px; }
+  .hero-deck { --ring-radius: 110vw; top: min(64svh, 540px); width: min(66vw, 276px); }
   .hero-wheel { animation-duration: 82s; }
   .deck-card { border: 0; border-radius: 20px; }
   .deck-card img, .deck-card video, .deck-card::after { border-radius: 20px; }
@@ -350,22 +350,29 @@ body.is-intro-ready .hero-wheel { rotate: 0deg; transition: rotate 1.65s cubic-b
   .work-heading h2 em { display: block; font-size: 8.7vw; white-space: nowrap; }
   .about-heading > p, .strength-heading > p, .work-heading > div p { font-size: 16px; }
   .about-panels { grid-template-columns: 1fr; margin-top: 58px; }
-  .about-profile-card { width: 100%; min-height: 0; grid-template-columns: 1fr; gap: 36px; margin-left: 0; padding: 18px; border-radius: 28px; }
+  .about-profile-card { width: 100%; min-height: 0; grid-template-columns: minmax(108px, .72fr) minmax(0, 1.45fr); gap: 14px; margin-left: 0; padding: 14px; align-items: stretch; border-radius: 24px; }
   .about::after { height: 86px; }
-  .about-profile-side { gap: 24px; }
-  .about-profile-photo { width: min(230px, 72vw); border-radius: 22px; }
-  .about-profile-contact { width: min(230px, 100%); margin-bottom: 0; padding: 0 6px; }
-  .about-profile-contact a { min-height: 44px; font-size: 13px; overflow-wrap: anywhere; }
-  .about-profile-main { min-height: 380px; padding: 8px 6px 10px; }
-  .about-profile-label { gap: 10px; }
-  .about-profile-label strong, .about-profile-label span, .about-profile-label i { font-size: 18px; }
-  .about-profile-main h2 { margin-bottom: 22px; font-size: 12vw; }
-  .about-profile-role { display: block; }
-  .about-profile-role strong, .about-profile-role span { display: block; }
-  .about-profile-role span { margin-top: 5px; }
-  .about-profile-skills { margin-top: 42px; }
-  .skills-grid { display: grid; grid-template-columns: repeat(3, 68px); gap: 18px 10px; justify-content: start; }
-  .skill-item > span { width: 52px; height: 52px; border-radius: 15px; }
+  .about-profile-side { gap: 12px; align-items: stretch; }
+  .about-profile-photo { width: 100%; max-width: 124px; border-radius: 16px; }
+  .about-profile-contact { width: 100%; margin-bottom: 0; padding: 0; gap: 6px; }
+  .about-profile-contact a { min-height: 26px; gap: 6px; font-size: clamp(8px, 2.3vw, 10px); overflow-wrap: anywhere; }
+  .about-profile-contact svg { width: 13px; height: 13px; flex: 0 0 13px; }
+  .about-profile-main { min-height: 0; padding: 4px 0 4px 14px; border-left: 1px solid rgba(16,23,27,.12); }
+  .about-profile-label { gap: 6px; }
+  .about-profile-label strong, .about-profile-label span, .about-profile-label i { font-size: clamp(9px, 2.7vw, 12px); }
+  .about-profile-main h2 { margin: 18px 0 10px; font-size: clamp(28px, 8vw, 34px); }
+  .about-profile-role { display: flex; flex-direction: column; gap: 2px; }
+  .about-profile-role strong, .about-profile-role span { display: block; font-size: clamp(9px, 2.7vw, 12px); }
+  .about-profile-role span { margin-top: 0; }
+  .about-profile-skills { margin-top: 20px; }
+  .skills-heading { gap: 5px; margin-bottom: 9px; }
+  .skills-heading strong { font-size: 10px; }
+  .skills-heading span { font-size: 8px; }
+  .skills-grid { display: grid; grid-template-columns: repeat(4, 34px); gap: 8px 6px; justify-content: start; }
+  .skill-item { width: 34px; flex: 0 0 34px; gap: 4px; }
+  .skill-item > span { width: 34px; height: 34px; border-radius: 10px; }
+  .skill-item small { width: 34px; font-size: 7px; }
+  .about-profile-skills svg { width: 19px; height: 19px; }
   .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 50px; padding-inline: 0; }
   .portrait-card { min-height: 118vw; }
   .bio-card { min-height: 500px; padding: 24px; }
@@ -406,33 +413,42 @@ body.is-intro-ready .hero-wheel { rotate: 0deg; transition: rotate 1.65s cubic-b
   .contact-bottom { grid-template-columns: 1fr auto; }
   .contact-bottom span:nth-child(2) { display: none; }
   .case-layer { padding: max(8px, env(safe-area-inset-top)) 8px max(8px, env(safe-area-inset-bottom)); }
-  .case-modal { width: 100%; height: calc(100dvh - 16px); max-height: calc(100svh - 16px); padding: 8px; border-radius: 24px; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
-  .case-nav { position: sticky; z-index: 5; top: 0; height: 56px; padding: 0 8px 0 14px; border-radius: 16px; box-shadow: 0 8px 20px rgba(16,23,27,.06); }
+  .case-modal { width: 100%; height: calc(100dvh - 12px); max-height: calc(100svh - 12px); padding: 6px; border-radius: 22px; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
+  .case-nav { position: sticky; z-index: 5; top: 0; height: 48px; padding: 0 6px 0 12px; border-radius: 15px; box-shadow: 0 8px 20px rgba(16,23,27,.06); }
+  .case-nav > a { font-size: 22px; }
   .case-nav > span { display: none; }
-  .case-nav button { min-width: 84px; min-height: 48px; justify-content: flex-end; }
-  .case-nav button b { width: 42px; height: 42px; border-radius: 15px; }
-  .case-layout { height: auto; gap: 10px; padding-top: 10px; }
-  .case-image { min-height: 0; max-height: 50dvh; aspect-ratio: auto; border-radius: 22px; }
-  .case-media figcaption.is-bilingual { padding: 18px 18px 20px; align-items: flex-start; flex-direction: column; gap: 5px; }
-  .case-media figcaption.is-bilingual span { font-size: 18px; }
-  .case-copy { min-height: 0; padding: 22px 18px; border-radius: 22px; overflow: visible; }
-  .case-copy h2 { margin-top: 20px; font-size: clamp(28px, 8vw, 36px); }
-  .case-navigation { gap: 8px; }
-  .case-navigation button { min-height: 64px; padding: 10px 8px; }
-  .case-navigation b { font-size: 15px; }
+  .case-nav button { min-width: 74px; min-height: 40px; justify-content: flex-end; gap: 8px; }
+  .case-nav button b { width: 36px; height: 36px; border-radius: 13px; font-size: 19px; }
+  .case-layout { height: auto; gap: 8px; padding-top: 8px; }
+  .case-image { min-height: 0; max-height: 64dvh; aspect-ratio: auto; border-radius: 18px; }
+  .case-media figcaption.is-bilingual { padding: 12px 14px 13px; align-items: center; flex-direction: row; gap: 10px; }
+  .case-media figcaption.is-bilingual span { font-size: 14px; }
+  .case-media figcaption.is-bilingual small { font-size: 8px; }
+  .case-copy { min-height: 0; padding: 14px; border-radius: 18px; overflow: visible; }
+  .case-copy > p:first-child, .case-copy > span { font-size: 8px; }
+  .case-copy h2 { margin: 10px 0 4px; font-size: clamp(23px, 6.5vw, 28px); }
+  .case-meta-list { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 14px; border-top: 1px solid rgba(16,23,27,.16); }
+  .case-meta-list div { gap: 4px; min-width: 0; padding: 10px 7px; border-top: 0; border-right: 1px solid rgba(16,23,27,.16); }
+  .case-meta-list div:last-child { border-right: 0; }
+  .case-meta-list small { font-size: 7px; }
+  .case-meta-list b { font-size: clamp(9px, 2.5vw, 11px); line-height: 1.35; overflow-wrap: anywhere; }
+  .case-navigation { gap: 4px; margin-top: 12px; padding-top: 8px; }
+  .case-navigation button { min-height: 46px; padding: 6px; gap: 3px; }
+  .case-navigation span { font-size: 7px; }
+  .case-navigation b { font-size: 12px; }
 }
 
 @media (max-width: 380px) {
   :root { --shell: calc(100vw - 22px); }
   .site-header { width: calc(100vw - 22px); }
   .hero h1 { font-size: 11.8vw; }
-  .about-profile-card { padding: 15px; }
-  .skills-grid { grid-template-columns: repeat(3, 64px); gap: 16px 6px; }
+  .about-profile-card { padding: 12px; }
+  .skills-grid { grid-template-columns: repeat(4, 31px); gap: 7px 5px; }
   .metrics article { min-height: 150px; padding-inline: 11px; }
   .project-title { right: 18px; }
   .project-tags i { font-size: 8px; }
   .case-nav button { min-width: 78px; gap: 8px; }
-  .case-navigation b { font-size: 14px; }
+  .case-navigation b { font-size: 11px; }
 }
 
 @media (hover: none) {
