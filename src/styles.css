@@ -47,13 +47,13 @@ img, video { display: block; width: 100%; }
 
 body.is-intro-active .site-header { opacity: 0; transform: translate(-50%, -18px); }
 body.is-intro-active .hero-copy { opacity: 0; transform: translateY(26px); }
-body.is-intro-active .hero-deck { opacity: 0; transform: translate3d(calc(-50% + 28vw), 0, 0); }
+body.is-intro-active .hero-deck { opacity: 0; transform: translate3d(calc(-50% + var(--mx)), var(--my), 0); }
+body.is-intro-active .hero-wheel { rotate: 22.5deg; transition: none; }
 body.is-intro-ready .site-header { animation: intro-nav-enter .82s var(--ease) both; }
 body.is-intro-ready .hero-copy { animation: intro-copy-enter .98s var(--ease) .12s both; }
-body.is-intro-ready .hero-deck { animation: intro-deck-sweep 1.12s cubic-bezier(.22,1,.36,1) .14s both; }
+body.is-intro-ready .hero-wheel { rotate: 0deg; transition: rotate 1.12s cubic-bezier(.22,1,.36,1) .08s; }
 @keyframes intro-nav-enter { from { opacity: 0; transform: translate(-50%, -18px); } to { opacity: 1; transform: translateX(-50%); } }
 @keyframes intro-copy-enter { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes intro-deck-sweep { 0% { opacity: 0; transform: translate3d(calc(-50% + 28vw), 0, 0); } 38% { opacity: 1; } 78% { opacity: 1; transform: translate3d(calc(-50% - 1.6vw), 0, 0); } 100% { opacity: 1; transform: translate3d(-50%, 0, 0); } }
 
 @media (prefers-reduced-motion: no-preference) {
   html.same-page-transition .site-header { view-transition-name: site-nav; }
@@ -102,9 +102,8 @@ body.is-intro-ready .hero-deck { animation: intro-deck-sweep 1.12s cubic-bezier(
 .primary-button:hover { color: var(--ink); background: var(--accent-soft); transform: translateY(-4px); }
 .hero-deck { --ring-radius: min(74vw, 1440px); position: absolute; z-index: 2; top: clamp(470px, 50vh, 590px); left: 50%; width: clamp(330px, 25rem, 400px); aspect-ratio: 1.625 / 1; opacity: 0; pointer-events: none; transform: translate3d(calc(-50% + var(--mx)), var(--my), 0); transition: opacity .65s var(--ease), transform .3s var(--ease); }
 .hero-deck.is-active { opacity: 1; }
-.hero-wheel { position: absolute; inset: 0; display: grid; transform-origin: 50% calc(50% + var(--ring-radius)); animation: hero-ring-spin 100s linear infinite, hero-ring-intro 1.5s cubic-bezier(.33,1,.68,1) both; will-change: transform, rotate; backface-visibility: hidden; }
+.hero-wheel { position: absolute; inset: 0; display: grid; transform-origin: 50% calc(50% + var(--ring-radius)); animation: hero-ring-spin 100s linear infinite; rotate: 0deg; transition: rotate 1.12s cubic-bezier(.22,1,.36,1); will-change: transform, rotate; backface-visibility: hidden; }
 @keyframes hero-ring-spin { to { transform: rotate(-360deg); } }
-@keyframes hero-ring-intro { from { rotate: 22.5deg; } to { rotate: 0deg; } }
 .deck-card { position: relative; grid-area: 1 / 1; display: block; width: 100%; height: 100%; border: 0; border-radius: 28px; background: transparent; box-shadow: none; overflow: hidden; pointer-events: auto; transform: rotate(var(--angle)); transform-origin: 50% calc(50% + var(--ring-radius)); transition: filter .45s var(--ease); backface-visibility: hidden; }
 .deck-card:hover { z-index: 20; filter: saturate(1.12); }
 .deck-card img, .deck-card video { height: 100%; border-radius: 28px; object-fit: cover; }
@@ -339,7 +338,7 @@ body.is-intro-ready .hero-deck { animation: intro-deck-sweep 1.12s cubic-bezier(
   .hero-intro { width: min(330px, 92vw); max-width: 330px; margin-top: 20px; font-size: 14px; }
   .primary-button { min-width: min(230px, 76vw); min-height: 58px; margin-top: 24px; padding: 16px 22px; font-size: 15px; }
   .hero-deck { --ring-radius: 118vw; top: min(70svh, 600px); width: min(72vw, 300px); }
-  .hero-wheel { animation-duration: 82s, 1.5s; }
+  .hero-wheel { animation-duration: 82s; }
   .deck-card { border: 0; border-radius: 20px; }
   .deck-card img, .deck-card video, .deck-card::after { border-radius: 20px; }
   .deck-card span { bottom: 12px; left: 13px; font-size: 8px; }
