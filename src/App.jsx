@@ -235,12 +235,31 @@ function Hero() {
     apply()
     return () => { query.removeEventListener('change', apply); disable() }
   }, [])
-  return <section className="hero" id="top" ref={heroRef}>
+  const onMove = (event) => {
+    const rect = heroRef.current?.getBoundingClientRect()
+    if (!rect) return
+    const x = (event.clientX - rect.left) / rect.width - .5
+    const y = (event.clientY - rect.top) / rect.height - .5
+    heroRef.current.style.setProperty('--mx', `${(x * 22).toFixed(2)}px`)
+    heroRef.current.style.setProperty('--my', `${(y * 14).toFixed(2)}px`)
+  }
+  const featured = homeProjects
+  return <section className="hero" id="top" ref={heroRef} onPointerMove={onMove}>
     <div className="hero-copy shell reveal">
       <p>ECOMMERCE VISUAL DESIGNER</p>
       <h1><span>VISUALS THAT CONNECT.</span>{' '}<em>STORIES THAT STAY.</em></h1>
       <div className="hero-intro">Crafting memorable brand, commerce and image-led experiences with clarity, character and purpose.</div>
       <a className="primary-button" href="#/projects">PORTFOLIO</a>
+    </div>
+    <div className="hero-deck is-active" aria-label="精选项目预览">
+      <div className="hero-wheel">
+        {featured.map((project, index) => <a className="deck-card" style={{ '--angle': `${index * (360 / featured.length)}deg` }} href={`#/projects/${project.id}`} key={project.id}>
+          {project.coverType === 'video'
+            ? <video src={assetUrl(project.image)} muted loop autoPlay playsInline preload="metadata" aria-hidden="true" style={{ objectViewBox: project.previewViewBox || 'none', objectPosition: project.previewPosition || 'center' }} />
+            : <img src={assetUrl(project.image)} alt="" loading={index < 3 ? 'eager' : 'lazy'} style={{ objectViewBox: project.previewViewBox || 'none', objectPosition: project.previewPosition || 'center' }} />}
+          <span>{project.title}</span>
+        </a>)}
+      </div>
     </div>
   </section>
 }
