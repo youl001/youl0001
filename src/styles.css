@@ -45,15 +45,17 @@ img, video { display: block; width: 100%; }
 @keyframes oval-cover { to { transform: translate(-50%, -50%) rotate(-18deg) scale(14); } }
 @keyframes transition-fade { to { opacity: 0; } }
 
-body.is-intro-active .site-header { opacity: 0; transform: translate(-50%, -12px); }
-body.is-intro-active .hero-copy { opacity: 0; transform: translateY(18px); }
+body.is-intro-active .site-header { opacity: 0; filter: blur(8px); transform: translate(-50%, -22px) scale(.985); }
+body.is-intro-active .hero-copy { opacity: 0; filter: blur(10px); transform: translateY(34px); }
 body.is-intro-active .hero-deck { opacity: 0; transform: translate3d(calc(-50% + var(--mx)), var(--my), 0); }
-body.is-intro-active .hero-wheel { rotate: 22.5deg; transition: none; }
-body.is-intro-ready .site-header { animation: intro-nav-enter 1.15s cubic-bezier(.16,1,.3,1) both; }
-body.is-intro-ready .hero-copy { animation: intro-copy-enter 1.35s cubic-bezier(.16,1,.3,1) .1s both; }
-body.is-intro-ready .hero-wheel { rotate: 0deg; transition: rotate 1.6s cubic-bezier(.16,1,.3,1) .12s; }
-@keyframes intro-nav-enter { from { opacity: 0; transform: translate(-50%, -12px); } to { opacity: 1; transform: translateX(-50%); } }
-@keyframes intro-copy-enter { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+body.is-intro-active .hero-wheel { rotate: 36deg; transition: none; }
+body.is-intro-ready .site-header { animation: intro-nav-enter 1.25s cubic-bezier(.16,1,.3,1) .05s both; }
+body.is-intro-ready .hero-copy { animation: intro-copy-enter 1.45s cubic-bezier(.16,1,.3,1) .16s both; }
+body.is-intro-ready .hero-deck { animation: intro-deck-reveal .65s cubic-bezier(.16,1,.3,1) .78s both; }
+body.is-intro-ready .hero-wheel { rotate: 0deg; transition: rotate 1.65s cubic-bezier(.4,0,.2,1) .35s; }
+@keyframes intro-nav-enter { from { opacity: 0; filter: blur(8px); transform: translate(-50%, -22px) scale(.985); } to { opacity: 1; filter: blur(0); transform: translateX(-50%) scale(1); } }
+@keyframes intro-copy-enter { from { opacity: 0; filter: blur(10px); transform: translateY(34px); } to { opacity: 1; filter: blur(0); transform: translateY(0); } }
+@keyframes intro-deck-reveal { from { opacity: 0; } to { opacity: 1; } }
 
 @media (prefers-reduced-motion: no-preference) {
   html.same-page-transition .site-header { view-transition-name: site-nav; }
@@ -102,7 +104,7 @@ body.is-intro-ready .hero-wheel { rotate: 0deg; transition: rotate 1.6s cubic-be
 .primary-button:hover { color: var(--ink); background: var(--accent-soft); transform: translateY(-4px); }
 .hero-deck { --ring-radius: min(74vw, 1440px); position: absolute; z-index: 2; top: clamp(470px, 50vh, 590px); left: 50%; width: clamp(330px, 25rem, 400px); aspect-ratio: 1.625 / 1; opacity: 0; pointer-events: none; transform: translate3d(calc(-50% + var(--mx)), var(--my), 0); transition: opacity 1s cubic-bezier(.16,1,.3,1), transform .3s var(--ease); }
 .hero-deck.is-active { opacity: 1; }
-.hero-wheel { position: absolute; inset: 0; display: grid; transform-origin: 50% calc(50% + var(--ring-radius)); animation: hero-ring-spin 100s linear infinite; rotate: 0deg; transition: rotate 1.6s cubic-bezier(.16,1,.3,1); will-change: transform, rotate; backface-visibility: hidden; }
+.hero-wheel { position: absolute; inset: 0; display: grid; transform-origin: 50% calc(50% + var(--ring-radius)); animation: hero-ring-spin 100s linear infinite; rotate: 0deg; transition: rotate 1.65s cubic-bezier(.4,0,.2,1); will-change: transform, rotate; backface-visibility: hidden; }
 @keyframes hero-ring-spin { to { transform: rotate(-360deg); } }
 .deck-card { position: relative; grid-area: 1 / 1; display: block; width: 100%; height: 100%; border: 0; border-radius: 28px; background: transparent; box-shadow: none; overflow: hidden; pointer-events: auto; transform: rotate(var(--angle)); transform-origin: 50% calc(50% + var(--ring-radius)); transition: filter .45s var(--ease); backface-visibility: hidden; }
 .deck-card:hover { z-index: 20; filter: saturate(1.12); }

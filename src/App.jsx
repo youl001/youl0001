@@ -113,7 +113,7 @@ function IntroExperience() {
       document.body.classList.remove('is-intro-active')
       if (!reduced) {
         document.body.classList.add('is-intro-ready')
-        readyTimer = window.setTimeout(() => document.body.classList.remove('is-intro-ready'), 2200)
+        readyTimer = window.setTimeout(() => document.body.classList.remove('is-intro-ready'), 3100)
       }
     }, reduced ? 180 : 3280)
     return () => {
