@@ -121,7 +121,6 @@ function IntroExperience() {
       <span className="intro-orbit intro-orbit-secondary" aria-hidden="true" />
       <span className="intro-core" aria-hidden="true" />
     </div>
-    <div className="intro-curtain" aria-hidden="true" />
   </div>
 }
 
