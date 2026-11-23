@@ -179,7 +179,7 @@ function Header({ menuOpen, setMenuOpen }) {
   return <>
     <header className={`site-header shell ${hidden && !menuOpen ? 'is-hidden' : ''}`}>
       <a className="brand" href="#/home/top" aria-label="返回首页"><span>YOUL</span><small>VISUAL<br />DESIGN</small></a>
-      <nav aria-label="主导航"><a href="#/home/top">首页</a><a href="#/home/about">关于我</a><a href="#/projects">作品集展示</a></nav>
+      <nav aria-label="主导航"><a href="#/home/top">首页</a><a href="#/home/about">关于我</a><a href="#/projects">作品集展示</a><a className="mobile-nav-contact" href="#/home/contact">联系</a></nav>
       <a className="contact-button" href="#/home/contact">Contact</a>
       <button className="menu-button" type="button" aria-label="打开菜单" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><i /><i /></button>
     </header>
