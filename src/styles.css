@@ -22,7 +22,7 @@ img, video { display: block; width: 100%; }
 .reveal { opacity: 0; transform: translateY(40px); transition: opacity .85s var(--ease), transform .85s var(--ease); }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
-.intro-screen { position: fixed; z-index: 1000; inset: 0; color: var(--ink); background: #f5f5f2; clip-path: circle(150vmax at 50% 50%); overflow: hidden; will-change: clip-path; }
+.intro-screen { position: fixed; z-index: 1000; inset: 0; color: var(--ink); background: var(--white); overflow: hidden; will-change: opacity; }
 .intro-loader { position: absolute; z-index: 2; top: 50%; left: 50%; width: clamp(74px, 7vw, 96px); aspect-ratio: 1; transform: translate(-50%, -50%); }
 .intro-orbit { --tilt: 0deg; position: absolute; top: 50%; left: 50%; width: 100%; height: 38%; border: 1px solid rgba(16,23,27,.22); border-radius: 50%; transform: translate(-50%, -50%) rotate(var(--tilt)); animation: intro-orbit-spin 1.8s linear infinite; }
 .intro-orbit::after { position: absolute; top: 50%; right: -3px; width: 6px; height: 6px; border-radius: 50%; background: var(--ink); box-shadow: 0 0 0 5px rgba(255,255,255,.82); content: ''; transform: translateY(-50%); }
@@ -30,8 +30,8 @@ img, video { display: block; width: 100%; }
 .intro-orbit-secondary { --tilt: -28deg; width: 82%; animation-direction: reverse; animation-duration: 2.25s; opacity: .68; }
 .intro-orbit-secondary::after { width: 4px; height: 4px; right: -2px; background: #9b9b97; box-shadow: 0 0 0 4px rgba(16,23,27,.07); }
 .intro-core { position: absolute; top: 50%; left: 50%; width: 8px; height: 8px; border-radius: 50%; background: var(--ink); box-shadow: 0 0 0 0 rgba(16,23,27,.18); transform: translate(-50%, -50%); animation: intro-core-pulse 1.4s var(--ease) infinite; }
-.intro-screen.is-leaving { animation: intro-screen-collapse 1.05s cubic-bezier(.76,0,.24,1) forwards; }
-.intro-screen.is-leaving .intro-loader { animation: intro-loader-collapse 1.05s cubic-bezier(.76,0,.24,1) forwards; }
+.intro-screen.is-leaving { animation: intro-screen-fade .72s ease .24s forwards; }
+.intro-screen.is-leaving .intro-loader { animation: intro-loader-release .82s var(--ease) forwards; }
 .page-transition { position: fixed; z-index: 900; inset: 0; pointer-events: all; overflow: hidden; }
 .page-transition-oval { position: absolute; top: 50%; left: 50%; width: 30vmax; height: 11vmax; border-radius: 50%; background: var(--white); transform: translate(-50%, -50%) rotate(-18deg) scale(0); will-change: transform; }
 .page-transition.is-covering .page-transition-oval { animation: oval-cover 1s cubic-bezier(.76,0,.24,1) forwards; }
@@ -39,8 +39,8 @@ img, video { display: block; width: 100%; }
 .page-transition.is-covered .page-transition-oval { transform: translate(-50%, -50%) rotate(-18deg) scale(14); }
 @keyframes intro-orbit-spin { to { transform: translate(-50%, -50%) rotate(calc(var(--tilt) + 360deg)); } }
 @keyframes intro-core-pulse { 50% { box-shadow: 0 0 0 12px rgba(16,23,27,0); transform: translate(-50%, -50%) scale(.72); } }
-@keyframes intro-screen-collapse { to { clip-path: circle(0 at 50% 50%); } }
-@keyframes intro-loader-collapse { 55% { opacity: 1; transform: translate(-50%, -50%) rotate(80deg) scale(.68); } 100% { opacity: 0; transform: translate(-50%, -50%) rotate(180deg) scale(0); } }
+@keyframes intro-screen-fade { to { opacity: 0; } }
+@keyframes intro-loader-release { 42% { opacity: 1; filter: blur(0); transform: translate(-50%, -50%) scale(1.08); } 100% { opacity: 0; filter: blur(6px); transform: translate(-50%, -50%) scale(1.48); } }
 @keyframes oval-cover { to { transform: translate(-50%, -50%) rotate(-18deg) scale(14); } }
 @keyframes transition-fade { to { opacity: 0; } }
 
