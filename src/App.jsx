@@ -18,11 +18,6 @@ const legacyProjects = [
   { id: 'retro-speaker', title: '复古蓝牙音箱', en: 'Retro Bluetooth Speaker', group: 'Amazon 视觉', scope: 'Amazon Listing', year: '2026', image: '/assets/portfolio/retro-speaker-thumb.jpg', detailImage: '/assets/portfolio/retro-speaker-detail.jpg', tone: 'tone-orange', services: '主附图 / Listing / A+ 页面', count: '完整 Amazon 项目', brief: '围绕复古造型、音质结构与生活方式场景完成主附图和 A+ 页面视觉设计。' },
   { id: 'air-duster', title: '压缩空气除尘器', en: 'Compressed Air Duster', group: 'Amazon 视觉', scope: 'Amazon Listing', year: '2026', image: '/assets/portfolio/air-duster-thumb.jpg', detailImage: '/assets/portfolio/air-duster-detail.jpg', tone: 'tone-violet', services: '主附图 / Listing / A+ 页面', count: '完整 Amazon 项目', brief: '通过动力结构、配件说明与应用场景强化产品性能卖点，形成清晰有力的跨境销售页面。' },
   { id: 'glass-blender', title: '厨房玻璃搅拌机', en: 'Glass Jar Blender', group: 'Amazon 视觉', scope: 'Amazon Listing', year: '2026', image: '/assets/portfolio/glass-blender-thumb.jpg', detailImage: '/assets/portfolio/glass-blender-detail.jpg', tone: 'tone-orange', services: '主附图 / Listing / A+ 页面', count: '完整 Amazon 项目', brief: '以食材场景、容量信息和多功能表现建立直观的产品卖点层级，适配 Amazon 转化阅读。' },
-  { id: 'video-bottle', title: '保温水瓶 AI 视频', en: 'Insulated Bottle AI Film', group: 'AI 产品视频', scope: 'AI 影像', year: '2026', image: '/assets/portfolio/video-bottle-poster.jpg', video: '/assets/portfolio/video-bottle.mp4', tone: 'tone-base', services: '创意脚本 / AI 生成 / 视频剪辑', count: '产品短片', brief: '通过生成式影像构建保温水瓶的使用场景与产品氛围，完成节奏简洁的电商短片。' },
-  { id: 'video-pet-mat', title: '宠物冰垫 AI 视频', en: 'Pet Cooling Mat AI Film', group: 'AI 产品视频', scope: 'AI 影像', year: '2026', image: '/assets/portfolio/video-pet-cooling-mat-poster.jpg', video: '/assets/portfolio/video-pet-cooling-mat.mp4', tone: 'tone-violet', services: '创意脚本 / AI 生成 / 视频剪辑', count: '产品短片', brief: '围绕夏日降温需求生成宠物使用情境，用轻松直观的镜头展示冰垫卖点。' },
-  { id: 'video-pet-feeder', title: '宠物喂食器 AI 视频', en: 'Pet Feeder AI Film', group: 'AI 产品视频', scope: 'AI 影像', year: '2026', image: '/assets/portfolio/video-pet-feeder-poster.jpg', video: '/assets/portfolio/video-pet-feeder.mp4', tone: 'tone-pink', services: '创意脚本 / AI 生成 / 视频剪辑', count: '产品短片', brief: '以日常陪伴与智能喂养为核心，组合宠物、产品和生活场景完成短视频表达。' },
-  { id: 'video-goggles', title: '儿童泳镜 AI 视频', en: 'Kids Goggles AI Film', group: 'AI 产品视频', scope: 'AI 影像', year: '2026', image: '/assets/portfolio/video-kids-goggles-poster.jpg', video: '/assets/portfolio/video-kids-goggles.mp4', tone: 'tone-green', services: '创意脚本 / AI 生成 / 视频剪辑', count: '产品短片', brief: '通过明亮活泼的泳池场景呈现佩戴体验、防水性能与儿童产品氛围。' },
-  { id: 'video-earbuds', title: '蓝牙耳机 AI 视频', en: 'Wireless Earbuds AI Film', group: 'AI 产品视频', scope: 'AI 影像', year: '2026', image: '/assets/portfolio/video-earbuds-poster.jpg', video: '/assets/portfolio/video-earbuds.mp4', tone: 'tone-silver', services: '创意脚本 / AI 生成 / 视频剪辑', count: '产品短片', brief: '结合科技质感、运动场景与产品特写，完成适合电商和社媒传播的耳机短片。' },
 ]
 
 const { categories: projectCategories, projects } = portfolioData
@@ -41,11 +36,10 @@ const galleryEnglishLabelByGroup = {
   '产品包装': 'PACKAGING DESIGN',
   '产品拍摄精修': 'PRODUCT RETOUCHING',
   '独立站设计': 'WEBSITE DESIGN',
-  'AI视频': 'AI PRODUCT VIDEO',
 }
 
 const homeProjects = projects
-  .filter((project) => !['category-8-project-2', 'category-9-project-2', 'category-9-project-3', 'category-9-project-4', 'category-9-project-5'].includes(project.id))
+  .filter((project) => project.id !== 'category-8-project-2')
 
 function useScrollMotion(routeKey) {
   useEffect(() => {

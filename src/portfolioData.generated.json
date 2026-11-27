@@ -7,8 +7,7 @@
     "产品详情页",
     "产品包装",
     "产品拍摄精修",
-    "独立站设计",
-    "AI视频"
+    "独立站设计"
   ],
   "projects": [
     {
@@ -585,116 +584,6 @@
       "services": "独立站设计",
       "count": "1 个文件",
       "brief": "本页展示“珠宝独立站”作品。"
-    },
-    {
-      "id": "category-9-project-1",
-      "title": "保温水瓶",
-      "en": "",
-      "group": "AI视频",
-      "scope": "AI视频",
-      "year": "2026",
-      "image": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E4%BF%9D%E6%B8%A9%E6%B0%B4%E7%93%B6.mp4",
-      "coverType": "video",
-      "gallery": [
-        {
-          "type": "video",
-          "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E4%BF%9D%E6%B8%A9%E6%B0%B4%E7%93%B6.mp4",
-          "title": "保温水瓶"
-        }
-      ],
-      "tone": "tone-base",
-      "services": "AI视频",
-      "count": "1 个文件",
-      "brief": "本页展示“保温水瓶”作品。"
-    },
-    {
-      "id": "category-9-project-2",
-      "title": "宠物冰垫",
-      "en": "",
-      "group": "AI视频",
-      "scope": "AI视频",
-      "year": "2026",
-      "image": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%AE%A0%E7%89%A9%E5%86%B0%E5%9E%AB.mp4",
-      "coverType": "video",
-      "gallery": [
-        {
-          "type": "video",
-          "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%AE%A0%E7%89%A9%E5%86%B0%E5%9E%AB.mp4",
-          "title": "宠物冰垫"
-        }
-      ],
-      "tone": "tone-base",
-      "services": "AI视频",
-      "count": "1 个文件",
-      "brief": "本页展示“宠物冰垫”作品。"
-    },
-    {
-      "id": "category-9-project-3",
-      "title": "宠物喂食器",
-      "en": "",
-      "group": "AI视频",
-      "scope": "AI视频",
-      "year": "2026",
-      "image": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%AE%A0%E7%89%A9%E5%96%82%E9%A3%9F%E5%99%A8.mp4",
-      "coverType": "video",
-      "gallery": [
-        {
-          "type": "video",
-          "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%AE%A0%E7%89%A9%E5%96%82%E9%A3%9F%E5%99%A8.mp4",
-          "title": "宠物喂食器"
-        },
-        {
-          "type": "video",
-          "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%AE%A0%E7%89%A9%E5%96%82%E9%A3%9F%E5%99%A82.mp4",
-          "title": "宠物喂食器 02"
-        }
-      ],
-      "tone": "tone-base",
-      "services": "AI视频",
-      "count": "2 个文件",
-      "brief": "本页展示“宠物喂食器”作品。"
-    },
-    {
-      "id": "category-9-project-4",
-      "title": "儿童泳镜",
-      "en": "",
-      "group": "AI视频",
-      "scope": "AI视频",
-      "year": "2026",
-      "image": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%84%BF%E7%AB%A5%E6%B3%B3%E9%95%9C.mp4",
-      "coverType": "video",
-      "gallery": [
-        {
-          "type": "video",
-          "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%84%BF%E7%AB%A5%E6%B3%B3%E9%95%9C.mp4",
-          "title": "儿童泳镜"
-        }
-      ],
-      "tone": "tone-base",
-      "services": "AI视频",
-      "count": "1 个文件",
-      "brief": "本页展示“儿童泳镜”作品。"
-    },
-    {
-      "id": "category-9-project-5",
-      "title": "蓝牙耳机",
-      "en": "",
-      "group": "AI视频",
-      "scope": "AI视频",
-      "year": "2026",
-      "image": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA.mp4",
-      "coverType": "video",
-      "gallery": [
-        {
-          "type": "video",
-          "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E8%93%9D%E7%89%99%E8%80%B3%E6%9C%BA.mp4",
-          "title": "蓝牙耳机"
-        }
-      ],
-      "tone": "tone-base",
-      "services": "AI视频",
-      "count": "1 个文件",
-      "brief": "本页展示“蓝牙耳机”作品。"
     }
   ]
 }
