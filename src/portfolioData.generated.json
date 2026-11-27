@@ -642,11 +642,16 @@
           "type": "video",
           "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%AE%A0%E7%89%A9%E5%96%82%E9%A3%9F%E5%99%A8.mp4",
           "title": "宠物喂食器"
+        },
+        {
+          "type": "video",
+          "src": "/portfolio-site-source/9AI%E8%A7%86%E9%A2%91/%E5%AE%A0%E7%89%A9%E5%96%82%E9%A3%9F%E5%99%A82.mp4",
+          "title": "宠物喂食器 02"
         }
       ],
       "tone": "tone-base",
       "services": "AI视频",
-      "count": "1 个文件",
+      "count": "2 个文件",
       "brief": "本页展示“宠物喂食器”作品。"
     },
     {
